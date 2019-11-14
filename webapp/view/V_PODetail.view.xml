@@ -1,0 +1,24 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml"
+	controllerName="POReportForSCM.controller.V_PODetail">
+	<App>
+		<pages>
+			<Page title="{i18n>podetail_title}" showNavButton="true" navButtonPress="GoToPOHeader">
+				<content>
+					<VBox width="100%" direction="Column" id="vbox">
+						<items>
+							<Text text="Sales Order: {SalesOrderID}" id="text1"/>
+							<Text text="Customer: {CustomerID}" id="text2"/>
+							<Text text="Gross Amount: {GrossAmount}" id="text3"/>
+							<Text text="Net Amount: {NetAmount}" id="text4"/>
+							<Text text="Tax Amount: {TaxAmount}" id="text5"/>
+							<Text text="Billing Status: {BillingStatus}" id="text6"/>
+							<Text text="Created At: {CreatedAt}" id="text7"/>
+							<Text text="Changed At: {ChangedAt}" id="text8"/>
+							<Button text="{i18n>podetail_button}" width="150px" id="button" icon="sap-icon://arrow-right" press="GoToPOItem"/>
+						</items>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

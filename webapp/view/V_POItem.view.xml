@@ -1,0 +1,62 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="POReportForSCM.controller.V_POItem">
+	<App>
+		<pages>
+			<Page title="{i18n>poitem_title}" showNavButton="true" navButtonPress="GoToPoDetail">
+				<content>
+					<Table id="it_item" items="{/SalesOrderLineItemSet}">
+						<items>
+							<ColumnListItem id="__item0">
+								<cells>
+									<Text text="{SalesOrderID}"/>
+									<Text text="{ItemPosition}"/>
+									<Text text="{ProductID}"/>
+									<Text text="{DeliveryDate}"/>
+									<Text text="{NetAmount}"/>
+									<Text text="{TaxAmount}"/>
+									<Text text="{Quantity}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+						<columns>
+							<Column>
+								<header>
+									<Label text="Sales Order ID"/>
+								</header>
+							</Column>
+							<Column>
+								<header>
+									<Label text="Item Position"/>
+								</header>
+							</Column>
+							<Column>
+								<header>
+									<Label text="Product ID"/>
+								</header>
+							</Column>
+							<Column>
+								<header>
+									<Label text="Delivery Date"/>
+								</header>
+							</Column>
+							<Column>
+								<header>
+									<Label text="Net Amount"/>
+								</header>
+							</Column>
+							<Column>
+								<header>
+									<Label text="Tax Amount"/>
+								</header>
+							</Column>
+							<Column>
+								<header>
+									<Label text="Quantity"/>
+								</header>
+							</Column>
+						</columns>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

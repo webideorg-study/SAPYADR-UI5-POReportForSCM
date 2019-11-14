@@ -1,0 +1,15 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="POReportForSCM.controller.V_POHeader">
+	<App>
+		<pages>
+			<Page title="{i18n>poheader_title}">
+				<content>
+					<List noDataText="Drop list items here" id="list" items="{/SalesOrderSet}" growing="true" growingScrollToLoad="true" growingThreshold="5" growingTriggerText="More">
+						<items>
+							<StandardListItem type="Navigation" title="SO# {SalesOrderID}" description="Status# {LifecycleStatus}" icon="sap-icon://heatmap-chart" id="item" press="GoToPODetail"/>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
