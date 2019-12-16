@@ -57,7 +57,7 @@ sap.ui.define([
 			oRouter.navTo("Target_PODetail", {
 				SelectedItem: encodeURIComponent(sPath)
 			});
-
+			
 		}
 
 	});
